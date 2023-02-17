@@ -13,7 +13,10 @@ function numeroSimetrico(num) {
   // numeroSimetrico(11711) devuelve true
 
   // Tu código:
-
+  num = String(num);
+  let array = num.split("");
+  let inverso = array.map(el => el).reverse();
+  return array.every((el,i) => el == inverso[i]);
 }
 
 // No modifiques nada debajo de esta linea //
